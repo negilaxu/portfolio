@@ -1,0 +1,397 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    text-decoration: none;
+    outline: none;
+    scroll-behavior: smooth;
+    font-family: 'Poppins',sans-serif;
+}
+
+:root {
+    --big-color: black;
+    --second-big-color: black;
+    --text-color: white;
+    --main-color: white;
+    --color: rgb(9, 224, 9);
+}
+
+
+html{
+    font-size: 22px
+}
+body{
+    background-color: black;
+    color:whitesmoke;
+}
+
+header {
+    background: black;
+}
+
+
+.header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    padding: 0.8rem 9% ;
+    background-color: var(white);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    z-index: 100;
+    background-image: linear-gradient(black);
+}
+
+
+section {
+    min-height: 30%;
+}
+
+
+.logo {
+    font-size: 1.8rem;
+    color:white;
+    font-weight: 200;
+    cursor: default;
+}
+
+.navbar a{
+    font-size: 0.9rem;
+    color: var(--text-color);
+    margin-left: 2rem;
+    transition: .3s;
+}
+
+
+.navbar a:hover,
+.navbar a.active {
+    color: rgb(9, 224, 9);
+}
+
+
+#menu-icon {
+    font-size: 1.5rem;
+    color: var(--text-color);
+    display: none;
+ }
+
+
+.home {
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 4rem;
+ }
+
+
+.home-content {
+    position: absolute;
+    left: 5%;
+    width: 50%;
+}
+
+
+ .home-content h3 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    left: 80;
+ }
+
+ .home-content h3 {
+     font-size: 1.3rem;
+     font-weight: 800;
+ }
+
+
+ .home-content span:hover {
+    font-size: larger;
+    transition: .3s;
+    color:rgb(9, 224, 9);
+ }
+
+.home-content p {
+    font-size: 1.1rem;
+}
+
+.shapes {
+    position: absolute;
+    left: 60%;
+    bottom: 30%;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(32, 239, 191);
+    border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+    box-shadow: 15px 15px 50px rgba(4, 255, 125, 0.986);
+    margin: 25px;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0%{
+        border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+    }
+    30%{
+        border-radius: 35% 68% 59% 45%/65% 70% 35% 39%;
+    }
+    50%{
+        border-radius: 39% 64% 55% 47%/63% 69% 36% 33%;
+    }
+    80%{
+        border-radius: 35% 70% 60% 49%/73% 68% 42% 37%;
+    }
+    90%{
+        border-radius: 45% 72% 62% 42%/75% 68% 45% 39%;
+    }
+    100%{
+        border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+    }
+}
+
+.shapes::before {
+    position: absolute;
+    content: "" ;
+    background-color: rgb(75, 249, 191);
+    height: 300px;
+    width: 375px;
+    margin-left: -25px;
+    border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+    animation: 10s infinite linear;
+    box-shadow: 15px 15px 50px rgba(0, 249, 158, 0.916);
+    opacity: 75%;
+    animation: animate 10s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+
+@keyframes animate {
+    0%{
+        border-radius:58% 42% 75% 25%/76% 46% 54% 24%;
+    }
+    50%{
+        border-radius:60% 45% 75% 27%/76% 48% 54% 24%;
+    }
+    80%{
+        border-radius:62% 47% 77% 29%/78% 46% 56% 27%;
+    }
+    100%{
+        border-radius:58% 42% 75% 25%/76% 46% 54% 24%;
+}
+}
+.shapes::after {
+    position: absolute;
+    content: "" ;
+    background-color: rgb(16, 240, 102);
+    background: url(coder.gif);
+    height: 300px;
+    width: 375px;
+    margin-left: -25px;
+    border-radius: 38% 70% 70% 30%/30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(27, 252, 65, 0.916);
+    opacity: 75%;
+    animation: animate 10s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+@keyframes animate {
+    0%{
+        border-radius: 38% 70% 70% 30%/30% 30% 70% 70%;
+    }
+    50%{
+        border-radius: 55% 75% 86% 35%/55% 47% 74% 79%;
+    }
+    70%{
+        border-radius: 40% 85% 86% 55%/45% 67% 74% 79%;
+    }
+    90%{
+        border-radius: 38% 77% 76% 38%/37% 39% 76% 77%;
+    }
+    100%{
+        border-radius: 38% 70% 70% 30%/30% 30% 70% 70%;
+}
+}
+
+.divimg img {
+    position: absolute;
+    left: none;
+    bottom: none;
+    height: 300px;
+    width: 400px;
+    border-radius: 38% 70% 70% 30%/30% 30% 70% 70%;
+}
+
+.social-media a {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 1.7rem;
+    height: 1.7rem;
+    background: transparent;
+    border: .1rem solid var(--color);
+    border-radius: 50%;
+    font-size: 1.1rem;
+    color: var(--color);
+    margin: 3rem 1.5rem 3rem 0;
+    transition: .5s ;
+}
+
+.social-media a:hover {
+    background: var(--color);
+    color: var(--big-color);
+    box-shadow: 0 0 1rem var(--color);
+}
+
+.btn {
+    display: inline-block;
+    padding: 0.2rem 0.2rem;
+    background: rgb(9, 224, 9);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgb(9, 224, 9);
+    font-size: 0.8rem;
+    color: var(--second-big-color);
+    letter-spacing: none;
+    font-weight: 300;
+}
+
+
+.about {
+    position: absolute;
+    left: 50%;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: none;
+}
+
+.about-img {
+    position: absolute;
+    right: 120%;
+    top: -10%;
+    height: 300px;
+    width: 400px;
+    background-color: rgb(0, 255, 72);
+    border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+    box-shadow: 15px 15px 50px rgba(4, 255, 79, 0.986);
+    margin: 25px;
+    animation: animate 5s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+@keyframes animate {
+    0%{
+        border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+    }
+    30%{
+        border-radius: 35% 68% 59% 45%/65% 70% 35% 39%;
+    }
+    50%{
+        border-radius: 39% 64% 55% 47%/63% 69% 36% 33%;
+    }
+    80%{
+        border-radius: 35% 70% 60% 49%/73% 68% 42% 37%;
+    }
+    90%{
+        border-radius: 45% 72% 62% 42%/75% 68% 45% 39%;
+    }
+    100%{
+        border-radius: 33% 67% 58% 42%/63% 68% 32% 37%;
+    }
+}
+
+.about-img::before {
+    position: absolute;
+    content: "" ;
+    background-color: rgb(75, 249, 191);
+    height: 300px;
+    width: 375px;
+    margin-left: -25px;
+    border-radius: 58% 42% 75% 25%/76% 46% 54% 24%;
+    animation: 10s infinite linear;
+    box-shadow: 15px 15px 50px rgba(0, 249, 158, 0.916);
+    opacity: 75%;
+    animation: animate 10s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+
+
+@keyframes animate {
+    0%{
+        border-radius:58% 42% 75% 25%/76% 46% 54% 24%;
+    }
+    50%{
+        border-radius:60% 45% 75% 27%/76% 48% 54% 24%;
+    }
+    80%{
+        border-radius:62% 47% 77% 29%/78% 46% 56% 27%;
+    }
+    100%{
+        border-radius:58% 42% 75% 25%/76% 46% 54% 24%;
+}
+}
+.about-img::after {
+    position: absolute;
+    content: "" ;
+    background-color: rgb(0, 255, 234);
+    background: url(EgUx.gif);
+    height: 300px;
+    width: 375px;
+    margin-left: -25px;
+    border-radius: 38% 70% 70% 30%/30% 30% 70% 70%;
+    box-shadow: 15px 15px 50px rgba(20, 149, 255, 0.916);
+    opacity: 75%;
+    animation: animate 10s ease-in-out infinite;
+    transition: all 1s ease-in-out;
+}
+@keyframes animate {
+    0%{
+        border-radius: 38% 70% 70% 30%/30% 30% 70% 70%;
+    }
+    50%{
+        border-radius: 48% 85% 76% 65%/35% 37% 74% 79%;
+    }
+    70%{
+        border-radius: 40% 85% 86% 45%/45% 47% 74% 79%;
+    }
+    90%{
+        border-radius: 38% 77% 76% 38%/37% 39% 76% 77%;
+    }
+    100%{
+        border-radius: 38% 70% 70% 30%/30% 30% 70% 70%;
+}
+}
+
+.about-content h2 {
+    font-size: 1.5rem;
+    font-weight: 900;
+    left: 80;
+}
+
+.about-content h3 {
+    font-size: 1.2rem;
+    font-weight: 900;
+    left: 80;
+}
+
+.about-content p {
+    font-size: 1.1rem;
+    width: 60%;
+}
+
+.about-content a {
+    display: inline-block;
+    padding: 0.2rem 0.2rem;
+    background: rgb(9, 224, 9);
+    border-radius: 1rem;
+    box-shadow: 0 0 1rem rgb(9, 224, 9);
+    font-size: 0.8rem;
+    color: var(--second-big-color);
+    letter-spacing: none;
+    font-weight: 300;
+}
+
+.about-content span {
+    color: rgb(9, 224, 9);
+}
